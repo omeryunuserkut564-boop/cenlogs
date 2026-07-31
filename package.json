@@ -1,0 +1,10 @@
+{
+  "name": "cme-e-katalog",
+  "version": "1.0.0",
+  "description": "CME e-katalog - statik web sitesi",
+  "private": true,
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "license": "UNLICENSED"
+}

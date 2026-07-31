@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="index.meta.title">CEN Logistics Group | Caucasus Europe Network</title>
+<meta name="description" content="CEN Logistics Group — Türkiye, Gürcistan, Azerbaycan, Türkmenistan ve İran arasında denizyolu, demiryolu ve tahmil-tahliye lojistik çözümleri." data-i18n-attr="content:index.meta.description">
+<link rel="icon" type="image/png" href="assets/images/logo-emblem.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= PAGE TRANSITION VEIL ================= -->
+<div class="page-veil" id="pageVeil"><img class="veil-logo" src="assets/images/logo-emblem.png" alt=""></div>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo-emblem.png" alt="CEN Logistics Group logosu">
+      <span class="brand-text"><strong>CEN LOGISTICS</strong><span>Caucasus Europe Network</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" data-i18n="common.nav.home">Anasayfa</a>
+      <a href="hakkimizda.html" data-i18n="common.nav.about">Hakkımızda</a>
+      <a href="hizmetler.html" data-i18n="common.nav.services">Hizmetlerimiz</a>
+      <a href="faaliyet-bolgeleri.html" data-i18n="common.nav.regions">Faaliyet Bölgeleri</a>
+      <a href="teklif-al.html" data-i18n="common.nav.quote">Teklif Al</a>
+      <a href="iletisim.html" data-i18n="common.nav.contact">İletişim</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" id="langSwitch">
+        <button class="lang-switch-btn" id="langSwitchBtn" type="button" aria-haspopup="true" aria-expanded="false" data-i18n-attr="aria-label:common.langSwitchAria">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span class="lang-switch-current">TR</span>
+        </button>
+        <div class="lang-switch-menu" id="langSwitchMenu">
+          <button type="button" class="lang-option active" data-lang="tr">Türkçe</button>
+          <button type="button" class="lang-option" data-lang="en">English</button>
+          <button type="button" class="lang-option" data-lang="ru">Русский</button>
+        </div>
+      </div>
+      <a href="tel:+902166296615" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span data-i18n="common.callNow">Hemen Ara</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" data-i18n-attr="aria-label:common.navToggleAria" aria-label="Menüyü aç">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="menu-backdrop" id="menuBackdrop"></div>
+<nav class="mobile-menu" id="mobileMenu">
+  <div class="mobile-lang-switch">
+    <button type="button" class="lang-option active" data-lang="tr">TR</button>
+    <button type="button" class="lang-option" data-lang="en">EN</button>
+    <button type="button" class="lang-option" data-lang="ru">RU</button>
+  </div>
+  <a href="index.html" data-i18n="common.nav.home">Anasayfa</a>
+  <a href="hakkimizda.html" data-i18n="common.nav.about">Hakkımızda</a>
+  <a href="hizmetler.html" data-i18n="common.nav.services">Hizmetlerimiz</a>
+  <a href="faaliyet-bolgeleri.html" data-i18n="common.nav.regions">Faaliyet Bölgeleri</a>
+  <a href="tasima-sureci.html" data-i18n="common.nav.process">Taşıma Süreci</a>
+  <a href="teklif-al.html" data-i18n="common.nav.quote">Teklif Al</a>
+  <a href="blog.html" data-i18n="common.nav.blog">Blog</a>
+  <a href="sss.html" data-i18n="common.nav.faq">Sıkça Sorulan Sorular</a>
+  <a href="iletisim.html" data-i18n="common.nav.contact">İletişim</a>
+  <a href="tel:+902166296615" class="btn btn-primary" data-i18n="common.callNow">Hemen Ara</a>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <span class="hero-tag reveal in-view" data-i18n="index.hero.tag">⚓ 2020'den beri Türkiye • Gürcistan • Azerbaycan • Türkmenistan</span>
+    <h1 class="reveal in-view" data-i18n="index.hero.title">İki Nokta Arasında <em>Multimodal</em> Taşımacılıkta Güvenilir Ortağınız</h1>
+    <p class="hero-sub reveal in-view reveal-delay-1" data-i18n="index.hero.sub">CME Intermodal&amp;Shipping, ELS Intermodal Logistics ve CEN Logistics Georgia güçlerini birleştirerek; karayolu, demiryolu, denizyolu taşımacılığı ile tahmil-tahliye hizmetlerini tek merkezden yönetiyoruz.</p>
+    <div class="hero-actions reveal in-view reveal-delay-2">
+      <a href="teklif-al.html" class="btn btn-primary">
+        <span data-i18n="common.nav.quote">Teklif Al</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <a href="hizmetler.html" class="btn btn-outline" data-i18n="common.nav.services">Hizmetlerimiz</a>
+    </div>
+    <div class="hero-stats reveal in-view reveal-delay-3">
+      <div class="stat"><strong>2020</strong><span data-i18n="index.hero.stat1">Kuruluş Yılı</span></div>
+      <div class="stat"><strong>3</strong><span data-i18n="index.hero.stat2">Grup Şirketi</span></div>
+      <div class="stat"><strong>10+</strong><span data-i18n="index.hero.stat3">Hizmet Verilen Ülke</span></div>
+      <div class="stat"><strong>7/24</strong><span data-i18n="index.hero.stat4">Operasyon Desteği</span></div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span data-i18n="index.hero.scrollCue">Aşağı Kaydır</span><span class="line"></span></div>
+</section>
+
+<!-- ================= MARQUEE ================= -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>
+      <span data-i18n="common.country.turkiye">Türkiye</span><span data-i18n="common.country.gurcistan">Gürcistan</span><span data-i18n="common.country.azerbaycan">Azerbaycan</span><span data-i18n="common.country.turkmenistan">Türkmenistan</span>
+      <span data-i18n="common.country.ozbekistan">Özbekistan</span><span data-i18n="common.country.kazakistan">Kazakistan</span><span data-i18n="common.country.rusya">Rusya</span><span data-i18n="common.country.iran">İran</span>
+      <span data-i18n="common.country.cin">Çin</span><span data-i18n="common.country.ukrayna">Ukrayna</span><span data-i18n="common.country.avrupa">Avrupa</span>
+    </span>
+    <span aria-hidden="true">
+      <span data-i18n="common.country.turkiye">Türkiye</span><span data-i18n="common.country.gurcistan">Gürcistan</span><span data-i18n="common.country.azerbaycan">Azerbaycan</span><span data-i18n="common.country.turkmenistan">Türkmenistan</span>
+      <span data-i18n="common.country.ozbekistan">Özbekistan</span><span data-i18n="common.country.kazakistan">Kazakistan</span><span data-i18n="common.country.rusya">Rusya</span><span data-i18n="common.country.iran">İran</span>
+      <span data-i18n="common.country.cin">Çin</span><span data-i18n="common.country.ukrayna">Ukrayna</span><span data-i18n="common.country.avrupa">Avrupa</span>
+    </span>
+  </div>
+</div>
+
+<!-- ================= SAYILARLA BİZ ================= -->
+<section class="section-pad counters-section">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow" data-i18n="index.counters.eyebrow">Rakamlarla</span>
+      <h2 data-i18n="index.counters.title">Sayılarla Biz</h2>
+      <p data-i18n="index.counters.sub">Kuruluşumuzdan bugüne büyüyen operasyon ağımız ve iş ortaklıklarımız.</p>
+    </div>
+    <div class="counter-grid">
+      <div class="counter-card reveal">
+        <div class="counter-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <span class="counter-num" data-count="1250" data-suffix="+">0</span>
+        <span class="counter-label" data-i18n="index.counters.label1">Operasyon Sayısı</span>
+      </div>
+      <div class="counter-card reveal reveal-delay-1">
+        <div class="counter-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <span class="counter-num" data-count="10" data-suffix="+">0</span>
+        <span class="counter-label" data-i18n="index.counters.label2">Hizmet Verilen Ülke</span>
+      </div>
+      <div class="counter-card reveal reveal-delay-2">
+        <div class="counter-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+        <span class="counter-num" data-count="15000" data-suffix="+ TEU">0</span>
+        <span class="counter-label" data-i18n="index.counters.label3">Yıllık Taşıma</span>
+      </div>
+      <div class="counter-card reveal reveal-delay-3">
+        <div class="counter-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <span class="counter-num" data-count="40" data-suffix="+">0</span>
+        <span class="counter-label" data-i18n="index.counters.label4">İş Ortağı</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section-pad" id="about">
+  <div class="container about-grid">
+    <div class="about-media reveal">
+      <div class="about-media-grid">
+        <img class="tall" src="assets/images/crane-lifting.jpg" alt="Liman vinç operasyonu" data-i18n-attr="alt:index.about.alt1">
+        <img src="assets/images/container-hopper.jpg" alt="Konteyner içi ekipman yüklemesi" data-i18n-attr="alt:index.about.alt2">
+        <img src="assets/images/rail-pipes.jpg" alt="Demiryolu vagonunda boru taşımacılığı" data-i18n-attr="alt:index.about.alt3">
+      </div>
+      <div class="about-badge">
+        <span class="num">2020</span>
+        <span class="lbl" data-i18n="index.about.badgeLbl">Kuruluşundan beri kesintisiz büyüme</span>
+      </div>
+    </div>
+
+    <div class="about-text">
+      <div class="section-head" style="margin-bottom:24px;">
+        <span class="eyebrow" data-i18n="common.nav.about">Hakkımızda</span>
+        <h2 data-i18n="index.about.title">Bölgesel Uzmanlığı Küresel Bir Markada Birleştiriyoruz</h2>
+      </div>
+      <p data-i18n="index.about.p1"><strong>CEN LOGISTICS GROUP</strong>, 2020'de kurulmuş bir şirketler grubudur. Bünyesinde bulunan CME Intermodal&amp;Shipping, ELS Intermodal Logistics ve CEN Logistics Georgia şirketleri ile multimodal ve iki nokta arasında tır taşıma, deniz konteyner ve bulk taşıma, demiryolu konteyner vagon taşımacılığı ve Türkiye genelinde tahmil tahliye konusunda hizmet vermektedir.</p>
+      <p data-i18n="index.about.p2">Siparişlerinizi tek bir merkezden, uzman iş geliştirme ve lojistik mühendislik ekiplerimizle; her bir operasyon firmamızın bölgesel deneyim, uzmanlık ve profesyonel yönetim olanakları ile birlikte yönetiyoruz.</p>
+
+      <div class="group-companies">
+        <div class="co"><strong>CME Intermodal&amp;Shipping</strong><span data-i18n="index.about.co1">Denizyolu &amp; multimodal taşıma</span></div>
+        <div class="co"><strong>ELS Intermodal Logistics</strong><span data-i18n="index.about.co2">Demiryolu &amp; intermodal çözümler</span></div>
+        <div class="co"><strong>CEN Logistics Georgia</strong><span data-i18n="index.about.co3">Bölgesel liman &amp; kara operasyonları</span></div>
+      </div>
+      <a href="hakkimizda.html" class="btn btn-dark" style="margin-top:30px;">
+        <span data-i18n="index.about.cta">Hikayemizin Tamamı</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MISSION & VISION ================= -->
+<section class="section-pad bg-alt" id="mission">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow" data-i18n="index.mission.eyebrow">Yol Haritamız</span>
+      <h2 data-i18n="index.mission.title">Misyonumuz ve Vizyonumuz</h2>
+    </div>
+
+    <div class="mv-grid">
+      <div class="mv-card mission reveal">
+        <div class="mv-inner">
+          <div class="mv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7l3-7z"/></svg></div>
+          <h3 data-i18n="index.mission.h1">Misyonumuz</h3>
+          <p data-i18n="index.mission.p1">Ana misyonumuz; müşterilerimize kusursuz ve verimli hizmet sunmak ve rekabetçi fiyatlar sunmaktır. Müşterilerimize, topluma ve çevreye karşı sorumluluklarımızı yerine getirirken şeffaflık, etik değerler ve kaliteye bağlılıkla faaliyet gösteriyoruz.</p>
+        </div>
+      </div>
+
+      <div class="mv-card vision reveal reveal-delay-1">
+        <div class="mv-inner">
+          <div class="mv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/></svg></div>
+          <h3 data-i18n="index.mission.h2">Vizyonumuz</h3>
+          <p data-i18n="index.mission.p2">Avrupa &amp; Türkiye ve Orta Asya ülkeleri arasında sürekli gelişen ticarette mal akışı için tüm iştiraklerimizle tek bir tedarik zinciri yapısı altında en güvenilir ve tercih edilen taşımacılık markası olmak.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HİZMETLERİMİZ ================= -->
+<section class="section-pad" id="services">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow" data-i18n="index.services.eyebrow">Ne Yapıyoruz</span>
+      <h2 data-i18n="common.nav.services">Hizmetlerimiz</h2>
+      <p data-i18n="index.services.sub">Denizyolu, demiryolu, karayolu, multimodal, liman handling ve tahmil-tahliye hizmetlerimizle tedarik zincirinizin her adımındayız.</p>
+    </div>
+
+    <div class="service-card-grid">
+      <a href="hizmet-deniz-tasimaciligi.html" class="service-card reveal">
+        <div class="service-card-media"><img src="assets/images/ship-containers.jpg" alt="Konteyner gemisi denizyolu taşıması" data-i18n-attr="alt:index.services.card1.alt"></div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><line x1="12" y1="22" x2="12" y2="8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/></svg></div>
+          <h3 data-i18n="common.service.sea">Deniz Taşımacılığı</h3>
+          <p data-i18n="index.services.card1.desc">Dünyanın her limanından bulk ve konteyner yüklerin denizyolu ile güvenli taşınması.</p>
+          <span class="service-card-cta"><span data-i18n="common.cta.viewDetails">Detayları İncele</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <a href="hizmet-demiryolu.html" class="service-card reveal reveal-delay-1">
+        <div class="service-card-media"><img src="assets/images/rail-container-cma.jpg" alt="Demiryolu konteyner taşıması" data-i18n-attr="alt:index.services.card2.alt"></div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="13" rx="2"/><path d="M4 11h16"/><path d="M8 19l-2 3"/><path d="M16 19l2 3"/><circle cx="8.5" cy="14.5" r="1"/><circle cx="15.5" cy="14.5" r="1"/></svg></div>
+          <h3 data-i18n="common.service.rail">Demiryolu</h3>
+          <p data-i18n="index.services.card2.desc">BTK hattı ve Middle Corridor üzerinden Türkiye, Kafkasya, Orta Asya ve Çin arası taşımacılık.</p>
+          <span class="service-card-cta"><span data-i18n="common.cta.viewDetails">Detayları İncele</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <a href="hizmet-karayolu.html" class="service-card reveal reveal-delay-2">
+        <div class="service-card-media"><img src="assets/images/cargo-lashing-truck.jpg" alt="Karayolu TIR taşımacılığı" data-i18n-attr="alt:index.services.card3.alt"></div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="15" height="10" rx="1"/><path d="M16 10h3l3 3v4h-6z"/><circle cx="5.5" cy="18.5" r="1.8"/><circle cx="17.5" cy="18.5" r="1.8"/></svg></div>
+          <h3 data-i18n="common.service.road">Karayolu</h3>
+          <p data-i18n="index.services.card3.desc">TIR ve dorse filomuzla nokta-to-nokta, sınır ötesi karayolu taşımacılığı.</p>
+          <span class="service-card-cta"><span data-i18n="common.cta.viewDetails">Detayları İncele</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <a href="hizmet-multimodal.html" class="service-card reveal">
+        <div class="service-card-media"><img src="assets/images/container-hopper.jpg" alt="Multimodal taşımacılık ekipmanları" data-i18n-attr="alt:index.services.card4.alt"></div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <h3 data-i18n="common.service.multimodal">Multimodal Taşımacılık</h3>
+          <p data-i18n="index.services.card4.desc">Deniz, demir ve karayolunu tek bir zincirde birleştiren uçtan uca çözümler.</p>
+          <span class="service-card-cta"><span data-i18n="common.cta.viewDetails">Detayları İncele</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <a href="hizmet-liman-handling.html" class="service-card reveal reveal-delay-1">
+        <div class="service-card-media"><img src="assets/images/port-cranes-containers.jpg" alt="Liman vinç ve konteyner operasyonu" data-i18n-attr="alt:index.services.card5.alt"></div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+          <h3 data-i18n="common.service.port">Liman Handling</h3>
+          <p data-i18n="index.services.card5.desc">Poti, Alat, Türkmenbaşı ve İran limanlarında gümrüklü/gümrüksüz saha operasyonları.</p>
+          <span class="service-card-cta"><span data-i18n="common.cta.viewDetails">Detayları İncele</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <a href="hizmet-tahmil-tahliye.html" class="service-card reveal reveal-delay-2">
+        <div class="service-card-media"><img src="assets/images/crane-lifting.jpg" alt="Tahmil tahliye vinç operasyonu" data-i18n-attr="alt:index.services.card6.alt"></div>
+        <div class="service-card-body">
+          <div class="service-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M5 21h14"/></svg></div>
+          <h3 data-i18n="common.service.handling">Tahmil Tahliye</h3>
+          <p data-i18n="index.services.card6.desc">Vinç ve ekipmanlarla güvenli yükleme-boşaltma, lashing ve sertifikasyon hizmetleri.</p>
+          <span class="service-card-cta"><span data-i18n="common.cta.viewDetails">Detayları İncele</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NEDEN BİZİ TERCİH ETMELİSİNİZ ================= -->
+<section class="section-pad bg-alt" id="why">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow" data-i18n="index.why.eyebrow">Neden Biz</span>
+      <h2 data-i18n="index.why.title">Neden Bizi Tercih Etmelisiniz</h2>
+      <p data-i18n="index.why.sub">Bölgesel uzmanlığımızı, teknolojik altyapımızı ve deneyimli kadromuzu tek bir güvence altında sunuyoruz.</p>
+    </div>
+
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5.25 3.6 9.74 8 11 4.4-1.26 8-5.75 8-11V6l-8-4z"/></svg></div>
+        <h3 data-i18n="index.why.card1.title">Güvenilirlik</h3>
+        <p data-i18n="index.why.card1.desc">Kusursuz operasyon standartlarımız ve şeffaf iş süreçlerimizle güvenilir bir çözüm ortağıyız.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-1">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg></div>
+        <h3 data-i18n="index.why.card2.title">Hız</h3>
+        <p data-i18n="index.why.card2.desc">Bölgesel uzmanlığımız ve güçlü ağımızla yükünüzü en hızlı rotadan hedefine ulaştırıyoruz.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-2">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></div>
+        <h3 data-i18n="index.why.card3.title">Rekabetçi Fiyat</h3>
+        <p data-i18n="index.why.card3.desc">Ölçek ekonomisi ve doğrudan operatör bağlantılarımızla rekabetçi maliyetler sunuyoruz.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-3">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3 data-i18n="index.why.card4.title">Deneyimli Kadro</h3>
+        <p data-i18n="index.why.card4.desc">Bölgesel deneyime sahip lojistik mühendislik ve iş geliştirme ekiplerimizle yanınızdayız.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></div>
+        <h3 data-i18n="index.why.card5.title">Teknoloji</h3>
+        <p data-i18n="index.why.card5.desc">Yenilikçi takip ve operasyon yönetim çözümleriyle sevkiyatınızı uçtan uca izleyebilirsiniz.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-1">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3 data-i18n="index.why.card6.title">7/24 Destek</h3>
+        <p data-i18n="index.why.card6.desc">Operasyon hattımız, sınır ötesi süreçlerinizde kesintisiz destek vermek üzere 7/24 aktiftir.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAALİYET HARİTASI ================= -->
+<section class="section-pad" id="map">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow" data-i18n="index.map.eyebrow">Global Ağımız</span>
+      <h2 data-i18n="index.map.title">Faaliyet Haritası</h2>
+      <p data-i18n="index.map.sub">Türkiye merkezli operasyon ağımızla Avrupa'dan Çin'e, Kafkasya'dan İran'a uzanan koridorlarda hizmet veriyoruz. Bir ülkeye tıklayarak detayları görüntüleyin.</p>
+    </div>
+
+    <div class="map-section-grid reveal">
+      <div class="map-canvas-wrap">
+        <svg id="worldMap" viewBox="0 0 900 480" role="img" aria-label="CEN Logistics faaliyet bölgeleri haritası" data-i18n-attr="aria-label:index.map.svgAria"></svg>
+      </div>
+      <div class="map-panel" id="mapPanel">
+        <div class="map-panel-empty" data-i18n="index.map.panelEmpty">Ülke seçerek detayları görüntüleyin.</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:34px;">
+      <a href="faaliyet-bolgeleri.html" class="btn btn-dark">
+        <span data-i18n="index.map.cta">Tüm Bölgeleri İncele</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REFERANSLAR ================= -->
+<section class="bg-alt" style="padding:56px 0;">
+  <div class="container" style="margin-bottom:24px;">
+    <div class="section-head center" style="margin-bottom:0;">
+      <span class="eyebrow" data-i18n="index.partners.eyebrow">İş Ortaklıklarımız</span>
+      <h2 style="font-size:1.4rem;" data-i18n="index.partners.title">Sektörün Güvenilir Paydaşlarıyla Çalışıyoruz</h2>
+    </div>
+  </div>
+  <div class="partner-strip-wrap">
+    <div class="partner-track">
+      <span style="display:flex;">
+        <span class="partner-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><line x1="12" y1="22" x2="12" y2="8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/></svg><span data-i18n="index.partners.p1">Liman Otoriteleri</span></span>
+        <span class="partner-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="13" rx="2"/><path d="M4 11h16"/><path d="M8 19l-2 3"/><path d="M16 19l2 3"/></svg><span data-i18n="index.partners.p2">Demiryolu Operatörleri</span></span>
+        <span class="partner-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><span data-i18n="index.partners.p3">Gümrük &amp; Sigorta Ortakları</span></span>
+        <span class="partner-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2c1.3 0 1.9.5 2.5 1"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.62 5.7 1.62 8"/><path d="M12 10V2"/><path d="M12 2l4 3"/></svg><span data-i18n="index.partners.p4">Denizcilik Hatları</span></span>
+        <span class="partner-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg><span data-i18n="index.partners.p5">Terminal İşletmecileri</span></span>
+        <span class="partner-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/></svg><span data-i18n="index.partners.p6">Lojistik Teknoloji Sağlayıcıları</span></span>
+      </span>
+      <span aria-hidden="true" style="display:flex;">
+        <span class="partner-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><line x1="12" y1="22" x2="12" y2="8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/></svg><span data-i18n="index.partners.p1">Liman Otoriteleri</span></span>
+        <span class="partner-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="13" rx="2"/><path d="M4 11h16"/><path d="M8 19l-2 3"/><path d="M16 19l2 3"/></svg><span data-i18n="index.partners.p2">Demiryolu Operatörleri</span></span>
+        <span class="partner-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><span data-i18n="index.partners.p3">Gümrük &amp; Sigorta Ortakları</span></span>
+        <span class="partner-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2c1.3 0 1.9.5 2.5 1"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.62 5.7 1.62 8"/><path d="M12 10V2"/><path d="M12 2l4 3"/></svg><span data-i18n="index.partners.p4">Denizcilik Hatları</span></span>
+        <span class="partner-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg><span data-i18n="index.partners.p5">Terminal İşletmecileri</span></span>
+        <span class="partner-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/></svg><span data-i18n="index.partners.p6">Lojistik Teknoloji Sağlayıcıları</span></span>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="section-pad" id="gallery">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow" data-i18n="index.gallery.eyebrow">Sahadan Kareler</span>
+      <h2 data-i18n="index.gallery.title">Operasyonlarımızdan Görüntüler</h2>
+      <p data-i18n="index.gallery.sub">Limanlarımızdan, demiryolu terminallerimizden ve saha operasyonlarımızdan gerçek kesitler.</p>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item big" data-caption="Aktau Marine Terminali">
+        <img src="assets/images/aktau-marine-terminal.jpg" alt="Aktau Marine liman terminali" data-i18n-attr="alt:index.gallery.alt1">
+        <span class="g-label" data-i18n="index.gallery.label1">Aktau Marine Terminali</span>
+      </div>
+      <div class="gallery-item" data-caption="Liman vinç ve konteyner operasyonu">
+        <img src="assets/images/port-cranes-containers.jpg" alt="Liman vinç ve konteyner operasyonu" data-i18n-attr="alt:index.gallery.alt2">
+        <span class="g-label" data-i18n="index.gallery.label2">Liman Vinç Operasyonu</span>
+      </div>
+      <div class="gallery-item" data-caption="Tahıl silosu ve konteyner sahası">
+        <img src="assets/images/grain-silos-port.jpg" alt="Tahıl silosu ve konteyner sahası" data-i18n-attr="alt:index.gallery.alt3">
+        <span class="g-label" data-i18n="index.gallery.label3">Bulk Tahıl Terminali</span>
+      </div>
+      <div class="gallery-item" data-caption="ISO tank konteyner taşımacılığı">
+        <img src="assets/images/iso-tank-containers.jpg" alt="ISO tank konteyner taşımacılığı" data-i18n-attr="alt:index.gallery.alt4">
+        <span class="g-label" data-i18n="index.gallery.label4">ISO Tank Taşımacılığı</span>
+      </div>
+      <div class="gallery-item" data-caption="Proje kargo lashing ve sabitleme">
+        <img src="assets/images/cargo-lashing-truck.jpg" alt="Proje kargo lashing işlemi" data-i18n-attr="alt:index.gallery.alt5">
+        <span class="g-label" data-i18n="index.gallery.label5">Lashing &amp; Sertifikasyon</span>
+      </div>
+      <div class="gallery-item" data-caption="Rüzgar türbini kanadı ağır yük taşıması">
+        <img src="assets/images/wind-turbine-blade-crane.jpg" alt="Rüzgar türbini kanadı ağır yük taşıması" data-i18n-attr="alt:index.gallery.alt6">
+        <span class="g-label" data-i18n="index.gallery.label6">Proje Kargo &amp; Ağır Yük</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MÜŞTERİ YORUMLARI ================= -->
+<section class="section-pad bg-alt">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow" data-i18n="index.testimonials.eyebrow">Referans Görüşleri</span>
+      <h2 data-i18n="index.testimonials.title">Müşteri Yorumları</h2>
+      <p data-i18n="index.testimonials.sub">İş ortaklarımızın CEN Logistics Group deneyimleri.</p>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card reveal">
+        <div class="quote-mark">"</div>
+        <p data-i18n="index.testimonials.t1.quote">CEN Logistics ile çalışmaya başladığımızdan beri Orta Asya sevkiyatlarımızda hem şeffaflık hem de zamanında teslimat konusunda büyük fark yaşadık.</p>
+        <div class="testimonial-author">
+          <span class="avatar">TY</span>
+          <div><strong data-i18n="index.testimonials.t1.role">Lojistik Müdürü</strong><span data-i18n="index.testimonials.t1.sector">Tekstil Sektörü</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="quote-mark">"</div>
+        <p data-i18n="index.testimonials.t2.quote">Demiryolu ve liman handling süreçlerini tek elden yönetmeleri, operasyonel yükümüzü ciddi şekilde azalttı.</p>
+        <div class="testimonial-author">
+          <span class="avatar">EN</span>
+          <div><strong data-i18n="index.testimonials.t2.role">Tedarik Zinciri Direktörü</strong><span data-i18n="index.testimonials.t2.sector">Enerji Sektörü</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="quote-mark">"</div>
+        <p data-i18n="index.testimonials.t3.quote">Proje kargo taşımalarımızda gösterdikleri özen ve lashing/sertifikasyon süreçlerindeki titizlik gerçekten fark yaratıyor.</p>
+        <div class="testimonial-author">
+          <span class="avatar">SM</span>
+          <div><strong data-i18n="index.testimonials.t3.role">Operasyon Yöneticisi</strong><span data-i18n="index.testimonials.t3.sector">Sanayi &amp; Makine Sektörü</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA STRIP ================= -->
+<section style="padding: 0 0 96px;">
+  <div class="cta-strip reveal">
+    <h3 data-i18n="index.cta.title">Lojistik çözümleriniz için bizimle iletişime geçin.</h3>
+    <div class="cta-actions">
+      <a href="teklif-al.html" class="btn btn-primary" data-i18n="common.cta.requestQuote">Teklif İsteyin</a>
+      <a href="iletisim.html" class="btn btn-outline" data-i18n="common.cta.contactUs">İletişime Geçin</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="assets/images/logo-emblem.png" alt="CEN Logistics Group logosu" style="height:40px;">
+          <span class="brand-text"><strong>CEN LOGISTICS</strong><span>Caucasus Europe Network</span></span>
+        </a>
+        <p data-i18n="common.footer.brandDesc">Türkiye, Gürcistan, Azerbaycan ve Türkmenistan'daki bölgesel uzmanlığımızı birleştirerek karayolu, demiryolu ve denizyolu taşımacılığında güvenilir tek adres olmayı sürdürüyoruz.</p>
+        <div class="social-icons" style="margin-top:22px;">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="https://wa.me/905326743210" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.36A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.08-1.12l-.29-.17-3.03.79.81-2.96-.19-.3A8 8 0 1 1 12 20zm4.4-5.85c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.17-.7-.62-1.18-1.4-1.32-1.64-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.46-.39-.4-.54-.4-.14 0-.3-.02-.46-.02-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.15.2-.57.2-1.05.14-1.15-.06-.1-.22-.16-.46-.28z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="common.footer.quickMenu">Hızlı Menü</h5>
+        <ul>
+          <li><a href="index.html" data-i18n="common.nav.home">Anasayfa</a></li>
+          <li><a href="hakkimizda.html" data-i18n="common.nav.about">Hakkımızda</a></li>
+          <li><a href="faaliyet-bolgeleri.html" data-i18n="common.nav.regions">Faaliyet Bölgeleri</a></li>
+          <li><a href="tasima-sureci.html" data-i18n="common.nav.process">Taşıma Süreci</a></li>
+          <li><a href="blog.html" data-i18n="common.nav.blog">Blog</a></li>
+          <li><a href="sss.html" data-i18n="common.nav.faq">Sıkça Sorulan Sorular</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="common.footer.services">Hizmetler</h5>
+        <ul>
+          <li><a href="hizmet-deniz-tasimaciligi.html" data-i18n="common.service.sea">Deniz Taşımacılığı</a></li>
+          <li><a href="hizmet-demiryolu.html" data-i18n="common.service.rail">Demiryolu</a></li>
+          <li><a href="hizmet-karayolu.html" data-i18n="common.service.road">Karayolu</a></li>
+          <li><a href="hizmet-multimodal.html" data-i18n="common.service.multimodal">Multimodal Taşımacılık</a></li>
+          <li><a href="hizmet-liman-handling.html" data-i18n="common.service.port">Liman Handling</a></li>
+          <li><a href="hizmet-tahmil-tahliye.html" data-i18n="common.service.handling">Tahmil Tahliye</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="common.footer.contact">İletişim</h5>
+        <ul>
+          <li><a href="iletisim.html">Küçükbakkalköy Mah. Brandium R2 Blok K:25 D:243, Ataşehir / İstanbul</a></li>
+          <li><a href="tel:+902166296615">0(216) 629 66 15</a></li>
+          <li><a href="mailto:ufuk.elsever@cenlogs.com">ufuk.elsever@cenlogs.com</a></li>
+          <li><a href="teklif-al.html" data-i18n="common.footer.quoteLink">Teklif Al →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> <span data-i18n="common.footer.copyright">CEN Logistics Group. Tüm hakları saklıdır.</span></span>
+      <span style="display:flex;gap:18px;flex-wrap:wrap;">
+        <a href="kvkk.html" data-i18n="common.footer.kvkk">KVKK</a>
+        <a href="gizlilik-politikasi.html" data-i18n="common.footer.privacy">Gizlilik Politikası</a>
+        <a href="cerez-politikasi.html" data-i18n="common.footer.cookies">Çerez Politikası</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#10094;</button>
+  <img src="" alt="Büyütülmüş operasyon fotoğrafı" id="lightboxImg">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext">&#10095;</button>
+  <span class="lightbox-caption" id="lightboxCaption"></span>
+</div>
+
+<button class="back-to-top" id="backToTop" data-i18n-attr="aria-label:common.backToTopAria" aria-label="Yukarı çık">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
